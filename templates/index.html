@@ -1,6 +1,19 @@
-{% extends "base.html" %}
+{% extends "base.html" %} {% block content %}
+<div class="columns">
+  <div class="column is-one-fifth">
+    <aside class="menu">
+    <p class="menu-label">{{ section.title | safe }}</p>
+    <ul class="menu-list">
+    <li><a href="./syllabus.pdf">Syllabus</a></li>
+    {% set index_path = current_path ~ "_index.md" | trim_start_matches(pat="/") %}
+    {% set index = get_section(path=index_path) %}
+    {% for page in index.pages %}
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+    </aside>
+  </div>
 
-{% block content %}
-{{ section.content | safe }}
+  <div class="column content">{{ section.content | safe }}</div>
+</div>
 {% endblock content %}
-

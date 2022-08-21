@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %} {{ config.title }}{% endblock title %}</title>
+    {% endblock head %} {% block css %} <link rel="stylesheet" href="{{
+    get_url(path="style.css", trailing_slash=false) | safe }}"/>
+    {% endblock css %}
+  </head>
 
-    <head>
-        <meta charset="utf-8">
-        <title> CSc 212 Fall 2022</title>
-    </head>
-
-    <body>
-        <section class="section">
-            <div class="content">
-                {% block content %} {% endblock %}
-            </div>
-        </section>
-
-    </body>
+  <body>
+    <section class="section">
+      <div>{% block content %} {% endblock %}</div>
+    </section>
+  </body>
 </html>
