@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{% block title %} {{ config.title }}{% endblock title %}</title>
-    {% endblock head %} {% block css %} <link rel="stylesheet" href="{{
+    {% endblock head %} {% block css %} <link rel="stylesheet" type="text/css" href="{{
     get_url(path="style.css", trailing_slash=false) | safe }}"/>
     {% endblock css %}
   </head>
