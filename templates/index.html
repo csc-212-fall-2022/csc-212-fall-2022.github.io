@@ -5,6 +5,7 @@
     <p class="menu-label">{{ section.title | safe }}</p>
     <ul class="menu-list">
     <li><a href="./syllabus.pdf">Syllabus</a></li>
+    <li><a href="https://github.com/csc-212-fall-2022/assignment-1">Assignment 1</a></li>
     {% set index_path = current_path ~ "_index.md" | trim_start_matches(pat="/") %}
     {% set index = get_section(path=index_path) %}
     {% for page in index.pages %}
