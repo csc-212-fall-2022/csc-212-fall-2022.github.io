@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+{% block content %}
+<div class="columns">
+    <div class="column is-one-fifth">
+    <aside class="menu">
+    <p class="menu-label">CSc 221 Fall 2022</p>
+    <ul class="menu-list">
+    <li><a href="./syllabus.pdf">Syllabus</a></li>
+    <li><a href="https://github.com/csc-212-fall-2022/assignment-1">Assignment 1</a></li>
+    {% set index_path = current_path ~ "_index.md" | trim_start_matches(pat="/") %}
+    {% set index = get_section(path=index_path) %}
+    {% for page in index.pages %}
+    <li><a href="{{ page.permalink }}">{{ page.title }}</a></li>
+    {% endfor %}
+    {% for h1 in section.toc %}
+    <li><a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+    <ul class="menu-list">
+        {% for h2 in h1.children %}
+        <li><a href="{{h2.permalink | safe }}">{{ h2.title }}</a></li>   
+        {% endfor %}
+    </ul></li>
+    {% endfor %}
+    </ul>
+    </aside>
+    </div>
+    <div class="column content">
+{{section.content | safe }}
+    </div>
+</div>
+{% endblock content %}
