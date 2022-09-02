@@ -15,9 +15,16 @@ Use Homebrew to install the following:
 
 ### Valgrind
 
-On **Intel Macs**, you can install Valgrind with `brew install valgrind`. On **M1 Macs**, we can try
-installing Valgrind by building from source (download [here](https://valgrind.org/downloads/current.html),
-expand the archive and run `./autogen.sh`).
+On **Intel Macs**, you can install Valgrind with `brew install valgrind`.
+
+On **M1 Macs**, we can try installing Valgrind by building from source:
+0) `brew install autotools`
+1) Download [the latest release](https://valgrind.org/downloads/current.html) and expand the archive
+2) run `./autogen.sh`
+3) run `./configure`
+4) run `make`
+5) run `make install`
+You may need to use sudo for some subset of the commands.
 
 ### Setting up `clang-tidy`
 

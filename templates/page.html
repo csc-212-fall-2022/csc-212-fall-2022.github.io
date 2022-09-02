@@ -1,0 +1,7 @@
+{% extends "base.html" %} {% block content %}
+<div class="columns">
+  {% include "partials/menu.html" %}
+
+  <div class="column content">{{ page.content | safe }}</div>
+</div>
+{% endblock content %}
