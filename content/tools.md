@@ -50,3 +50,11 @@ You'll want to install the following packages if you don't have them already (th
 - `clang-format`
 - `clang-tidy`
 - `valgrind`
+
+## IDEs
+
+You're welcome to use whatever IDE/text editors you like.
+- [VSCode](https://code.visualstudio.com/) is free and cross-platform. It has nice WSL support.
+- [CLion](https://www.jetbrains.com/clion/) has a free student license (it's good for a year and can be renewed)
+- [Visual Studio](https://visualstudio.microsoft.com/) has a free communtity edition. **Note:** Windows-only. The Mac version does not have C++ support
+- [XCode](https://developer.apple.com/xcode/) for OS X.
