@@ -18,14 +18,17 @@ Use Homebrew to install the following:
 On **Intel Macs**, you can install Valgrind with `brew install valgrind`.
 
 On **M1 Macs**, we can try installing Valgrind by building from source:
-1) `brew install autotools`
+<strike>1) `brew install autotools`
 2) Download [the latest release](https://valgrind.org/downloads/current.html) and expand the archive
 3) run `./autogen.sh`
 4) run `./configure`
 5) run `make`
 6) run `make install`
 You may need to use sudo for some subset of the commands. (I haven't been able to try this on an M1 Mac.
-I did build successfully on my linux machine, so there aren't any *extremely* obscure dependencies.)
+I did build successfully on my linux machine, so there aren't any *extremely* obscure dependencies.)</strike>
+
+Looks like Valgrind doesn't build on M1 Macs. Check out the [VSCode Remote Containers Extension](https://code.visualstudio.com/docs/remote/containers)
+for what is likely the quickest route to a nice setup.
 
 ### Setting up `clang-tidy`
 
