@@ -17,3 +17,7 @@ Looking for the Zoom link? It's on Blackboard.
 
 While still subject to change, the [Final Exam Schedule](https://www.ccny.cuny.edu/registrar/fall-2022-final-exam-schedule) has been posted.
 Our final will be Thursday, December 15th at 8am in our regular classroom (NAC 5/102).
+
+## Announcements
+
+*Exam 1* will be *October 13*.
