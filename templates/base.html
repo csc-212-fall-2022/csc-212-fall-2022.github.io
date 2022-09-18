@@ -7,7 +7,6 @@
     <title>{% block title %} {{ config.title }}{% endblock title %}</title>
     {% endblock head %} 
     {% block css %} 
-    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="{{get_url(path="bulma.min.css", trailing_slash=false) | safe }}"/>
     <link rel="stylesheet" type="text/css" href="{{get_url(path="style.css", trailing_slash=false) | safe }}"/>
 
@@ -20,5 +19,6 @@
     <section class="section">
       <div>{% block content %} {% endblock %}</div>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
   </body>
 </html>

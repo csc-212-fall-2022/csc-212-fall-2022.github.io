@@ -20,4 +20,4 @@ Our final will be Thursday, December 15th at 8am in our regular classroom (NAC 5
 
 ## Announcements
 
-*Exam 1* will be *October 13*.
+**Exam 1** will be **October 13**.
