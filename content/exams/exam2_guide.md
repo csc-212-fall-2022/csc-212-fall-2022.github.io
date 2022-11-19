@@ -6,6 +6,7 @@ title="Exam 2 Study Guide"
 
 ## Changelog
 - 2022-11-12 Create the study guide
+- 2022-11-19 Add some LeetCode problems
 
 ## FAQ
 
@@ -15,10 +16,14 @@ title="Exam 2 Study Guide"
 **Q**: What resources may I use during the exam?<br>
 **A**: As with exam 1, you may bring on 8 1/2 x 11in page of notes. You will hand in your notes with your exam. (I'll give them back--having access when I'm grading means I have an easy way to know why you and your study partner wrote the same answer.)
 
-**Q**: Will there be a practice/sample exam again?
-**A**: Probably not. 
+**Q**: Will there be a practice/sample exam again?<br>
+**A**: No. Here a couple of relevant LeetCode problems (these don't cover all relevant topics):
+- [Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
+- [Same Tree](https://leetcode.com/problems/same-tree/)
+- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
+- [Binary Tree Level Order](https://leetcode.com/problems/binary-tree-level-order-traversal/) (I kind of wish I'd put this on the exam)
 
-**Q**: What sort of questions will be on the exam?
+**Q**: What sort of questions will be on the exam?<br>
 **A**: Much like last time, expect to:
 - explain trade-offs (why would we do X and not Y in situation ABC?)
 - modify one of the algorithms we've seen to solve a problem
