@@ -1,1 +1,3 @@
 public/
+.devenv*
+devenv.local.nix

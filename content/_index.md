@@ -20,6 +20,8 @@ Our final will be Thursday, December 15th at 8am in our regular classroom (NAC 5
 
 ## Announcements
 
+[Grade Calculator](./calculator/index.html)
+
 There will be an additional office hour, Monday October 10 at 7pm.
 
 **Exam 1** will be **October 13**.
